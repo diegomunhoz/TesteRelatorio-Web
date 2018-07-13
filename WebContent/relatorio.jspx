@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<f:view>
+	
+		<h:outputText rendered="#{empty relatorioBean.saida}" value="Relatório não gerado. Consulte o Administrador do Sistema." />
+	
+		<f:subview id="relatorio" rendered="#{not empty relatorioBean.saida}">
+	
+			<iframe id="iframe" src="#{relatorioBean.saida}" width="99%"
+				height="600px" style="min-height: 400px;"> 
+			</iframe>
+	
+		</f:subview>
+		
+	</f:view>
+</jsp:root>

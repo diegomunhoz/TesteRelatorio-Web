@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<f:view >
+		<body>
+			<h:form id="form">
+				<br />
+				<br />
+				<center>		
+					<h:commandLink target="_blank" action="#{relatorioBean.geraRelatorioPassandoConexao}" value="Gerar relatório passando a conexão." /><br />
+					<h:commandLink target="_blank" action="#{relatorioBean.geraRelatorioPassandoResultSet}" value="Gerar relatório passando o ResultSet." /><br />
+					<h:commandLink target="_blank" action="#{relatorioBean.geraRelatorioPassandoListaDeObjetos}" value="Gerar relatório passando uma lista de objetos." /><br />
+				</center>
+
+			</h:form>
+		</body>
+	</f:view>
+</jsp:root>

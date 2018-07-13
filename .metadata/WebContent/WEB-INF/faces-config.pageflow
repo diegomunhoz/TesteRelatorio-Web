@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf12338814888430" configfile="/testeRelatorio/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf12338875818435" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf12338875818436 pf12338875818437" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="index" id="pf12338875818438" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf12338875818436" path="/index.jspx"/>
+  <nodes xsi:type="pageflow:PFPage" name="relatorio" id="pf12338875818439" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf12338875818437" path="/relatorio.jspx"/>
+  <links id="pf12338875818436" target="pf12338875818438" source="pf12338875818435" outcome="index"/>
+  <links id="pf12338875818437" target="pf12338875818439" source="pf12338875818435" outcome="exibeRelatorio"/>
+</pageflow:Pageflow>
